@@ -53,7 +53,12 @@
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, quisquam
               reprehenderit ad vero tenetur fugit repellendus pariatur recusandae impedit
               delectus aliquam rerum, nemo tempore porro sunt. Omnis nulla officia
-              doloribus.lorem
+              doloribus. Cumculpa, repellat quibusdam ratione eos explicabo quod provident inventore
+              consequuntur enim. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus quasi reprehenderit consectetur veritatis iste! Rerum molestias
+              quos at assumenda mollitia in illo possimus, doloremque quia excepturi hic
+              ipsa voluptas ex itaque voluptatem molestiae perferendis facere iure vitae
+              quae aperiam rem?
             </p>
             <v-btn class="btnsubmit" outlined><span>BUTTON</span></v-btn>
           </v-col>
@@ -332,7 +337,7 @@
         </v-row>
         <v-row lg="8" cols="8" md="8" justify="center">
           <v-col lg="8" cols="6">
-            <p class="text">
+            <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, quisquam
               reprehenderit ad vero tenetur fugit repellendus pariatur recusandae impedit
               delectus aliquam rerum, nemo tempore porro sunt. Omnis nulla officia
