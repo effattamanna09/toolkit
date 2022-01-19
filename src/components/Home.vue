@@ -11,9 +11,15 @@
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, quisquam
               reprehenderit ad vero tenetur fugit repellendus pariatur recusandae impedit
               delectus aliquam rerum, nemo tempore porro sunt. Omnis nulla officia
-              doloribus.lorem
+              doloribus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
+              culpa, repellat quibusdam ratione eos explicabo quod provident inventore
+              consequuntur enim. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus quasi reprehenderit consectetur veritatis iste! Rerum molestias
+              quos at assumenda mollitia in illo possimus, doloremque quia excepturi hic
+              ipsa voluptas ex itaque voluptatem molestiae perferendis facere iure vitae
+              quae aperiam rem?
             </p>
-             <v-btn class="btnsubmit" outlined><span>BUTTON</span></v-btn>
+            <v-btn class="btnsubmit" outlined><span>BUTTON</span></v-btn>
           </v-col>
           <v-col lg="6" cols="6">
             <a href="#">
@@ -242,8 +248,6 @@
                     alt="Avatar"
                 /></a>
               </v-col>
-
-             
             </v-row>
 
             <!-- 2nd -->
@@ -278,8 +282,6 @@
                     alt="Avatar"
                 /></a>
               </v-col>
-
-              
             </v-row>
             <!-- end 2nd -->
 
@@ -306,7 +308,6 @@
                     alt="Avatar"
                 /></a>
               </v-col>
-              
             </v-row>
             <!-- end 3rd -->
           </v-col>

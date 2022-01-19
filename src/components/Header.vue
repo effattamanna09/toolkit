@@ -1,52 +1,49 @@
 <template>
-  <div>
-    <v-container>
-      <v-card>
-        <v-navigation-drawer app left color="#F7F7F7">
-          <v-divider></v-divider>
-          <v-list>
-            <v-list-item link href="#">
-              <a href="#">
-                <img class="mr-3" :src="require('../assets/images/logo.png')" height="60"
-              /></a>
-            </v-list-item>
-<!-- <template v-slot:activator> -->
-            <v-list-item-content>
-              <v-list-item v-for="link in links" :key="link.text" router :to="link.route">
-                <v-list-item-title class="font-class-name"
-                  >{{ link.text }}
-                  
-                  <v-list-item
-                    v-for="children in links"
-                    :key="children.text"
-                    router
-                    :to="children.route"
-                  >
-                    {{ children.text }}
-                  </v-list-item>
-                </v-list-item-title>
-              </v-list-item>
-            </v-list-item-content>
- <!-- </template> -->
+  <v-container>
+    <v-navigation-drawer app left>
+    
+
+      <v-list>
+        <div class="pa-1 text-no-wrap rounded-xl c elevation-9">
+          <v-list-item link href="#">
             <a href="#">
-              <img
-                class="mr-3"
-                :src="require('../assets/images/savelogo.png')"
-                height="60"
+              <img class="mr-3" :src="require('../assets/images/logo.png')" height="70"
             /></a>
-          </v-list>
-        </v-navigation-drawer>
-      </v-card>
-    </v-container>
+          </v-list-item>
+          <!-- <template v-slot:activator> -->
+          <v-list-item-content>
+            <v-list-item v-for="link in links" :key="link.text" router :to="link.route">
+              <v-list-item-title class="font-class-name"
+                >{{ link.text }}
+
+                <v-list-item
+                  class="child"
+                  v-for="children in link.children"
+                  :key="children.text"
+                  router
+                  :to="children.route"
+                >
+                  {{ children.text }}
+                </v-list-item>
+              </v-list-item-title>
+            </v-list-item>
+          </v-list-item-content>
+          <!-- </template> -->
+          <a href="#">
+            <img class="mr-3" :src="require('../assets/images/savelogo.png')" height="60"
+          /></a>
+        </div>
+      </v-list>
+    </v-navigation-drawer>
 
     <v-app-bar app color="white" elevation="0">
       <v-btn class="navsearch" text
         ><v-text-field class="textunderline" hide-details></v-text-field
         ><v-icon> mdi-magnify</v-icon></v-btn
       >
-      <v-btn><v-icon> mdi-camera</v-icon></v-btn>
+      <v-btn><v-icon>mdi-filter</v-icon></v-btn>
     </v-app-bar>
-  </div>
+  </v-container>
 </template>
 
 <script>
@@ -55,15 +52,18 @@ export default {
 
   data: () => ({
     drawer: false,
+
     links: [
       { text: "Home", route: "/" },
       {
         text: "Access",
         route: "/",
-         active: true,
+        active: true,
         children: [
-          { text: "Emotional&Psychosocial Protection", route: "/" },
-          { text: "Emotional&Psychosocial Protection", route: "/" },
+          { text: "What if..?", route: "/" },
+          { text: "Intersectionality Tip", route: "/" },
+          { text: "Relevant Indicators", route: "/" },
+          { text: "Further Readings", route: "/" },
         ],
       },
       { text: "Emotional&Psychosocial Protection", route: "/" },
