@@ -29,7 +29,7 @@
       </v-card>
     </v-container>
 
-    <v-app-bar app color="white" elevation="5">
+    <v-app-bar app color="white" elevation="0">
       <v-btn class="navsearch" text
         ><v-text-field class="textunderline" hide-details></v-text-field
         ><v-icon> mdi-magnify</v-icon></v-btn
