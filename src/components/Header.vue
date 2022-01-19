@@ -10,14 +10,24 @@
                 <img class="mr-3" :src="require('../assets/images/logo.png')" height="60"
               /></a>
             </v-list-item>
-
+<!-- <template v-slot:activator> -->
             <v-list-item-content>
               <v-list-item v-for="link in links" :key="link.text" router :to="link.route">
-                <v-list-item-title class="font-class-name">{{
-                  link.text
-                }}</v-list-item-title>
+                <v-list-item-title class="font-class-name"
+                  >{{ link.text }}
+                  
+                  <v-list-item
+                    v-for="children in link.links"
+                    :key="children.text"
+                    router
+                    :to="children.route"
+                  >
+                    {{ children.text }}
+                  </v-list-item>
+                </v-list-item-title>
               </v-list-item>
             </v-list-item-content>
+ <!-- </template> -->
             <a href="#">
               <img
                 class="mr-3"
@@ -47,7 +57,15 @@ export default {
     drawer: false,
     links: [
       { text: "Home", route: "/" },
-      { text: "Access", route: "/" },
+      {
+        text: "Access",
+        route: "/",
+         active: true,
+        children: [
+          { text: "Emotional&Psychosocial Protection", route: "/" },
+          { text: "Emotional&Psychosocial Protection", route: "/" },
+        ],
+      },
       { text: "Emotional&Psychosocial Protection", route: "/" },
       { text: "Physical Protection", route: "/" },
       { text: "Teaching&Learning", route: "/" },
