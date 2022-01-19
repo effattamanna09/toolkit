@@ -17,7 +17,7 @@
                   >{{ link.text }}
                   
                   <v-list-item
-                    v-for="children in link.links"
+                    v-for="children in links"
                     :key="children.text"
                     router
                     :to="children.route"
